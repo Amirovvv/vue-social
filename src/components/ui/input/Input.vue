@@ -1,7 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import inputProps from './InputTypes'
+
+const props = defineProps(inputProps())
+</script>
 
 <template>
-  <input type="text" />
+  <div :class="$style.myInput">
+    <label for="myInput">{{ props.label }}</label>
+    <input :type="props.type" name="myInput" />
+  </div>
 </template>
 
-<style scoped></style>
+<style module>
+@import './index.module.scss';
+</style>
