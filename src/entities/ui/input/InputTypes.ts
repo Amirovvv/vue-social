@@ -1,6 +1,6 @@
 import { PropType } from "vue"
 
-export type InputType = 'text' | 'number' | 'radio' | 'checkbox'
+export type InputType = 'text' | 'number'
 
 export const inputProps = () => ({
   type: {type: String as PropType<InputType>, default: 'text'},
