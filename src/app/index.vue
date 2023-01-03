@@ -7,3 +7,7 @@ import { Routing } from '@/pages'
     <Routing />
   </div>
 </template>
+
+<style>
+@import './index.scss';
+</style>
