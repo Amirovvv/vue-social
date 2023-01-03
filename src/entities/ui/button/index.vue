@@ -8,9 +8,9 @@ const btnType = computed(() => `${props.type}Btn`)
 </script>
 
 <template>
-  <button :class="$style[btnType]"><slot></slot></button>
+  <button :class="[$style[btnType], $style.btn]"><slot></slot></button>
 </template>
 
-<style module>
+<style lang="scss" module>
 @import './index.module.scss';
 </style>

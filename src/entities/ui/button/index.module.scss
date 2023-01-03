@@ -1,0 +1,31 @@
+.btn {
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.defaultBtn {
+  background-color: $default;
+  color: $black;
+}
+
+.primaryBtn, .redBtn, .errorBtn, .blackBtn {
+  color: $white;
+}
+
+.primaryBtn {
+  background-color: $primary;
+}
+
+.redBtn {
+  background: $red;
+}
+
+.errorBtn {
+  background: $error;
+}
+
+.blackBtn {
+  background: $black;
+}
